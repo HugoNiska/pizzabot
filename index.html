@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzabot</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Welcome to Pizzabot!</h1>
     
     <form id="pizzaOrderForm">
-        <label for="pizzaType">Pizza Type:</label>
+        <label for="pizzaType">Pizzas to choose from:</label>
         <select id="pizzaType" name="pizzaType">
             <option value="Vegetarian Pizza">Vegetarian Pizza</option>
             <option value="Hawaiian Pizza">Hawaiian Pizza</option>
             <option value="Pepperoni Pizza">Pepperoni Pizza</option>
         </select>
     
-        <label for="quantity">Quantity:</label>
+        <label for="quantity">How many would you like to order?</label>
         <input type="number" id="quantity" name="quantity" min="1" required>
     
         <button type="button" onclick="processOrder()">Place Order</button>
